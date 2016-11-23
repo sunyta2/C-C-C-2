@@ -1,0 +1,1 @@
+[{"name":"Jeongpyo Lee","connectiontype":"dropbox","serverurl":"http:////dropbox","ftpserver":"//dropbox","username":"newdropboxuser1476232144403","password":"dropboxpw","startdir":"/","autoconnect":true,"group":"","sshprivkey":""}]
