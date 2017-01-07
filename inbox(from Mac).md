@@ -20,8 +20,62 @@ w to jump to a screen location using a mouse click with iTerm2? | alvinalexander
 앱열기 시험함
 앱열기 시험함
 [Title](https://m.youtube.com/watch?list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c&params=EAEYATgBSAFYCmILMGxpWGVvQURVNkFoCA%253D%253D&v=HVMOBKRNEbc&mode=NORMAL)
+
+---
 [Subnetting Explained Step by Step & Subnetting Chart]
 (https://www.youtube.com/watch?v=Gt0RQX3QCO8)
 Clicking [here][section-preview] will lead you to the **Preview** section.
+
+---
+
+Sqlite3로 입력하여 변경하기
+
+[How to remove an icon from launchpad that does not appear in the Finder? - Ask Different](http://apple.stackexchange.com/questions/144756/how-to-remove-an-icon-from-launchpad-that-does-not-appear-in-the-finder)
+# 
+sqlite3 $(sudo find /private/var/folders -name com.apple.dock.launchpad)/db/db "DELETE FROM apps WHERE title='APP_NAME_CASE_SENSITIVE';" && killall Dock
+shareimprove this answer
+edited Dec 13 '15 at 12:27
+ #  	 	
+Gives error Error: unable to open database "/private/var/folders/bd/q50jcx3s0q9dhskwrwb308hh0000gp/0/co‌​m.apple.dock.launchp‌​ad": unable to open database file – Boggartfly Nov 23 '16 at 5:12
+add a comment
+# 
+또 다른 ㅇSQL의 방식
+[How to Remove Stubborn Apps from Launchpad - YouTube](https://www.youtube.com/watch?v=j6klO3TFwDw)
+sqlite3 ~/Library/Application\ Support/Dock/*.db "DELETE from apps WHERE title='APPNAME';" && killall Dock
+#
+---
+론치패드를 원상복귀하는 법, 연구 이것을 다시 편집한 것은?? 터미널의 일반명령어 연구
+defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock 
+[How To Reset Your LaunchPad In OS X Yosemite - YouTube](https://www.youtube.com/watch?v=QGOIrA7FbEM)
+#
+론치패드를 화면에 보이는 가로세로 수량 조절법 터미널에서 실행하는 3번의 리턴입력
+#
+[How To Change Launchpad Icon Size in OS X - YouTube](https://www.youtube.com/watch?v=_5AZs6_Bb5k)
+defaults write com.apple.dock springboard-columns -int 4
+defaults write com.apple.dock springboard-rows -int 3
+killall Dock
+#
+defaults write com.apple.dock ResetLaunchPad -bool TRUE
+killall Dock
+
+**// 한화면에 자동정렬하는 기능임**
+#
+defaults delete com.apple.dock springboard-columns 
+defaults delete com.apple.dock springboard-rows
+killall Dock
+// 원상복귀 명령임
+#
+
+#
+대안의 먼저본것
+defaults write com.apple.doc springboard-rows -int 10
+defaults write com.apple.doc springboard-columns -int 10
+killall Dock
+[Resize and Get More Icons in Launchpad | Mac OS X El Capitan - YouTube](https://youtu.be/cg3gEEogu74?t=1m28s)
+#
+
+
+
+
 
 
